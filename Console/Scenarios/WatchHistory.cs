@@ -26,7 +26,7 @@ public class WatchHistory : IScenario
         AnsiConsole.Write(new Markup($"[grey]------[/]\n"));
         AnsiConsole.Write(new Markup($"[yellow]Total[/]: {_userService.GetBalance()}"));
 
-        Console.ReadKey();
+        System.Console.ReadKey();
         return Scenario.GetName(new MenuByUser());
     }
 }
