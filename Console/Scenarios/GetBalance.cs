@@ -18,7 +18,7 @@ public class GetBalance : IScenario
     {
         AnsiConsole.Write(new Text($"Your balance {_userService.GetBalance()}\n"));
         AnsiConsole.Write(new Text("Press enter to go back"));
-        Console.ReadKey();
+        System.Console.ReadKey();
         return Scenario.GetName(new MenuByUser());
     }
 }
